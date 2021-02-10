@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"sync"
 
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/logger"
 )
 

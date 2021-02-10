@@ -9,9 +9,9 @@ package http
 import (
 	"net/http"
 
-	sdkCommon "github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/container"
-	"github.com/edgexfoundry/device-sdk-go/internal/telemetry"
+	sdkCommon "github.com/jcerato/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/container"
+	"github.com/jcerato/device-sdk-go/internal/telemetry"
 
 	contractsV2 "github.com/edgexfoundry/go-mod-core-contracts/v2"
 	"github.com/edgexfoundry/go-mod-core-contracts/v2/dtos/common"

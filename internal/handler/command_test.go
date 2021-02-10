@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/container"
-	"github.com/edgexfoundry/device-sdk-go/internal/transformer"
+	"github.com/jcerato/device-sdk-go/internal/container"
+	"github.com/jcerato/device-sdk-go/internal/transformer"
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/bootstrap/container"
 	"github.com/edgexfoundry/go-mod-bootstrap/di"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/logger"
@@ -21,10 +21,10 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/mock"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	"github.com/jcerato/device-sdk-go/internal/cache"
+	"github.com/jcerato/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/mock"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 
 	"github.com/stretchr/testify/require"
 )

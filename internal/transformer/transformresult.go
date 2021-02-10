@@ -14,9 +14,9 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	"github.com/jcerato/device-sdk-go/internal/cache"
+	"github.com/jcerato/device-sdk-go/internal/common"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/logger"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/metadata"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"

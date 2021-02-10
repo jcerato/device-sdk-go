@@ -7,7 +7,7 @@
 package container
 
 import (
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/common"
 	"github.com/edgexfoundry/go-mod-bootstrap/di"
 )
 

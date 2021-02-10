@@ -12,8 +12,8 @@ import (
 	"net/url"
 	"strings"
 
-	sdkCommon "github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/v2/application"
+	sdkCommon "github.com/jcerato/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/v2/application"
 	edgexErr "github.com/edgexfoundry/go-mod-core-contracts/errors"
 	"github.com/gorilla/mux"
 )

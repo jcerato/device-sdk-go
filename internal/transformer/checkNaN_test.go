@@ -11,7 +11,7 @@ import (
 	"math"
 	"testing"
 
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
 
 	"github.com/stretchr/testify/assert"

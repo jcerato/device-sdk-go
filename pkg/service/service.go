@@ -18,12 +18,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/autoevent"
-	"github.com/edgexfoundry/device-sdk-go/internal/clients"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/container"
-	"github.com/edgexfoundry/device-sdk-go/internal/controller"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	"github.com/jcerato/device-sdk-go/internal/autoevent"
+	"github.com/jcerato/device-sdk-go/internal/clients"
+	"github.com/jcerato/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/container"
+	"github.com/jcerato/device-sdk-go/internal/controller"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/bootstrap/container"
 

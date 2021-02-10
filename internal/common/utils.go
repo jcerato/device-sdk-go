@@ -24,7 +24,7 @@ import (
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
 	"github.com/google/uuid"
 
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 )
 
 var (
@@ -93,6 +93,15 @@ func SendEvent(event *dsModels.Event, lc logger.LoggingClient, ec coredata.Event
 	responseBody, errPost := ec.AddBytes(ctx, event.EncodedEvent)
 	if errPost != nil {
 		lc.Error("SendEvent Failed to push event", "device", event.Device, "response", responseBody, "error", errPost)
+		lc.Debug("Retrying to push event to core data")
+		responseBody, errPost := ec.AddBytes(ctx, event.EncodedEvent)
+		if errPost != nil {
+			lc.Error("Retrying to push event failed again", "device", event.Device, "response", responseBody, "error", errPost)
+		} else {
+			lc.Debug("SendEvent: Pushed event to core data", clients.ContentType, clients.FromContext(ctx, clients.ContentType), clients.CorrelationHeader, correlation)
+			lc.Trace("SendEvent: Pushed this event to core data", clients.ContentType, clients.FromContext(ctx, clients.ContentType), clients.CorrelationHeader, correlation, "event", event)
+		}
+
 	} else {
 		lc.Debug("SendEvent: Pushed event to core data", clients.ContentType, clients.FromContext(ctx, clients.ContentType), clients.CorrelationHeader, correlation)
 		lc.Trace("SendEvent: Pushed this event to core data", clients.ContentType, clients.FromContext(ctx, clients.ContentType), clients.CorrelationHeader, correlation, "event", event)

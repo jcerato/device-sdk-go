@@ -9,9 +9,9 @@ package http
 import (
 	"net/http"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/autodiscovery"
-	sdkCommon "github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/container"
+	"github.com/jcerato/device-sdk-go/internal/autodiscovery"
+	sdkCommon "github.com/jcerato/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/container"
 	edgexErr "github.com/edgexfoundry/go-mod-core-contracts/errors"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
 )

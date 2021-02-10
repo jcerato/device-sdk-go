@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/container"
+	"github.com/jcerato/device-sdk-go/internal/container"
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/bootstrap/container"
 	"github.com/edgexfoundry/go-mod-bootstrap/bootstrap/startup"
 	"github.com/edgexfoundry/go-mod-bootstrap/di"
@@ -26,7 +26,7 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/urlclient/local"
 	"github.com/edgexfoundry/go-mod-registry/registry"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/common"
 )
 
 // Clients contains references to dependencies required by the Clients bootstrap implementation.
