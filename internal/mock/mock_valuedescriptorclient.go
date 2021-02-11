@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/common"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
 	"github.com/google/uuid"
 )

@@ -7,7 +7,7 @@
 package common
 
 import (
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/coredata"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/general"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/logger"

@@ -10,10 +10,10 @@ package device
 import (
 	"fmt"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/transformer"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	"github.com/jcerato/device-sdk-go/internal/cache"
+	"github.com/jcerato/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/transformer"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
 )
 

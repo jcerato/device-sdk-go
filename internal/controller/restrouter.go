@@ -13,8 +13,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/controller/correlation"
+	"github.com/jcerato/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/controller/correlation"
 	"github.com/gorilla/mux"
 )
 

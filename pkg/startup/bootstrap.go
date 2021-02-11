@@ -13,8 +13,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/edgexfoundry/device-sdk-go"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	"github.com/jcerato/device-sdk-go"
+	dsModels "github.com/jcerato/device-sdk-go/pkg/models"
 	flags "github.com/jessevdk/go-flags"
 )
 

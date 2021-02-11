@@ -12,9 +12,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/provision"
+	"github.com/jcerato/device-sdk-go/internal/cache"
+	"github.com/jcerato/device-sdk-go/internal/common"
+	"github.com/jcerato/device-sdk-go/internal/provision"
 	"github.com/google/uuid"
 )
 
