@@ -81,12 +81,12 @@ func SendEvent(event *dsModels.Event) {
 	responseBody, errPost := EventClient.AddBytes(event.EncodedEvent, ctx)
 	if errPost != nil {
 		LoggingClient.Error("SendEvent Failed to push event", "device", event.Device, "response", responseBody, "error", errPost)
-		LoggingClient.Debug("Retrying to push event to core data")
+		LoggingClient.Info("Retrying to push event to core data")
 		responseBody, errPost := EventClient.AddBytes(event.EncodedEvent, ctx)
 		if errPost != nil {
 			LoggingClient.Error("Retrying to push event failed again", "device", event.Device, "response", responseBody, "error", errPost)
 		} else {
-			LoggingClient.Debug("SendEvent: Pushed event to core data", clients.ContentType, clients.FromContext(clients.ContentType, ctx), clients.CorrelationHeader, correlation)
+			LoggingClient.Info("SendEvent: Pushed event, that before fails, to core data", clients.ContentType, clients.FromContext(clients.ContentType, ctx), clients.CorrelationHeader, correlation)
 			LoggingClient.Trace("SendEvent: Pushed this event to core data", clients.ContentType, clients.FromContext(clients.ContentType, ctx), clients.CorrelationHeader, correlation, "event", event)
 		}
 	} else {
